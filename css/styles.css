@@ -9,3 +9,34 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.nav-container {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+}
+
+ul {
+    padding-inline-start: 0%;
+}
+
+nav li {
+    display: inline;
+}
+
+#border {
+    border-right: solid 1.5px black;
+    padding-right: 3px;
+}
+
+nav a {
+    display: inline-block;
+    justify-content: space-between;
+    padding-left: 9px;
+    text-decoration: none;
+    color: black;
+    font-size: 90%;
+}
