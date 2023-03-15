@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 80%;
+}
+
+h3 {
+    font-weight: 400;
+}
+
 #logo {
     max-width: 250px;
     display: block;
@@ -41,7 +49,7 @@ nav a {
     padding-left: 9px;
     text-decoration: none;
     color: black;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .banner-outer {
@@ -69,4 +77,14 @@ nav a {
     align-items: center;
     line-height: 12px;
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.about-container {
+    align-content: center;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
 }
