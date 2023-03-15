@@ -10,12 +10,15 @@ body {
     margin: 0 auto;
 }
 
-.nav-container {
+.container {
     margin-top: 3px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.nav-container {
     background-color: #ececec;
 }
 
@@ -39,4 +42,31 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 90%;
+}
+
+.banner-outer {
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+.banner-image {
+    height: 300px;
+    background: url(../images/banners/Main-Banner.jpeg) no-repeat center;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+}
+
+.banner-text {
+    color: white;
+    position: absolute;
+    align-items: center;
+    line-height: 12px;
+    text-align: center;
 }
