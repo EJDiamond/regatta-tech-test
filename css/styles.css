@@ -121,14 +121,14 @@ nav a {
     width: 70%;
     height: 800px;
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 50% 50%;
     grid-row: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    justify-content: center;
 }
 
 .image {
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -163,7 +163,58 @@ nav a {
     font-size: 75%;
     border-radius: 3px;
     text-decoration: none;
-    padding: 5px;
+    padding: 5px 10px;
     display: block;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+footer span {
+    font-size: 80%;
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+
+    .text-container {
+        width: 90%;
+    }
+
+    .image-container {
+        width: 100vw;
+        height: 1200px;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .image1 {
+        background: url(../images/heros/C2-Mobile.jpeg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .image2 {
+        background: url(../images/heros/C1-Mobile.jpeg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .image3 {
+        background: url(../images/heros/C3-Mobile.jpeg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .image4 {
+        background: url(../images/heros/C4-Mobile.jpeg) no-repeat center center;
+        background-size: cover;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
