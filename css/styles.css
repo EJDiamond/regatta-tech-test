@@ -24,16 +24,13 @@ h4 {
     margin: 0 auto;
 }
 
-.container {
+.nav-container {
+    background-color: #ececec;
     margin-top: 3px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.nav-container {
-    background-color: #ececec;
 }
 
 ul {
@@ -111,4 +108,62 @@ nav a {
     font-size: 80%;
     padding-left: 20px;
     padding-top: 0;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.image-container {
+    margin: 20px auto;
+    width: 70%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.image {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-size: contain;
+}
+
+.image1 {
+    background: url(../images/heros/C2-Desktop.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.image2 {
+    background: url(../images/heros/C1-Desktop.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.image3 {
+    background: url(../images/heros/C3-Desktop.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.image4 {
+    background: url(../images/heros/C4-Desktop.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.button {
+    background: black;
+    height: 15px;
+    color: white;
+    border: none;
+    font-size: 75%;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    text-align: center;
 }
