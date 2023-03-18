@@ -146,6 +146,12 @@
             <span>© The Regatta Group</span>
         </footer>
     </section>
+    <section>
+        <div id="app1">
+            <button v-on:click="increment">Increase Number</button>
+            <p>You clicked the button: {{ counter }} times</p>
+        </div>
+    </section>
     <script>
         new Vue({
             el: "#app",
@@ -157,6 +163,19 @@
                 ]
             },
         }).mount('#app')
+    </script>
+    <script>
+        new Vue({
+            el: "#app1",
+            data: {
+                counter: 0
+            },
+            methods: {
+                increment() {
+                    this.counter++;
+                }
+            }
+        }).mount('app1')
     </script>
 </body>
 
