@@ -43,13 +43,13 @@ nav li {
 
 #border {
     border-right: solid 1.5px black;
-    padding-right: 3px;
+    padding-right: 5px;
 }
 
 nav a {
     display: inline-block;
     justify-content: space-between;
-    padding-left: 9px;
+    padding-left: 3px;
     text-decoration: none;
     color: black;
     font-size: 80%;
