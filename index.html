@@ -146,10 +146,17 @@
             <span>© The Regatta Group</span>
         </footer>
     </section>
-    <section>
-        <div id="app1">
-            <button v-on:click="increment">Increase Number</button>
-            <p>You clicked the button: {{ counter }} times</p>
+    <section class="counter-container">
+        <div class="counter" id="app1">
+            <div class="counter-buttons">
+                <button class="button1" v-on:click="increment">Increase Number</button>
+                <!-- Added v-show="show" to the above button but couldn't figure out how to get it
+                to show again after hiding when the counter hit 10. -->
+                <button class="button1" v-if="counter > 0" v-on:click="decrement">Decrease Number</button>
+            </div>
+            <div>
+                <p>You clicked the button: {{ counter }} times.</p>
+            </div>
         </div>
     </section>
     <script>
@@ -168,14 +175,26 @@
         new Vue({
             el: "#app1",
             data: {
-                counter: 0
+                counter: 0,
+                show: true
             },
             methods: {
                 increment() {
-                    this.counter++;
-                }
+                    if (this.counter < 10) {
+                        this.counter++;
+                    }
+                    // Used this else statement to try and hide the increment button when the counter hit 10.
+                    // It was hidden but continued to be hidden when the count went back down to 9.
+                    else
+                        this.show = false;
+                },
+                decrement() {
+                    if (this.counter > 0) {
+                        this.counter--;
+                    }
+                },
             }
-        }).mount('app1')
+        }).mount('#app1')
     </script>
 </body>
 
